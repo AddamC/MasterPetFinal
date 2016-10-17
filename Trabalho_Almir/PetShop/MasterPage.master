@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 85%;
+            height: 646px;
+        }
+        .auto-style3 {
+            height: 147px;
+            background-color: #FFFFCC;
+        }
+        .auto-style4 {
+            background-color: #FFFFCC;
+        }
+        .auto-style5 {
+            background-color: #CCCCCC;
+            height: 437px;
+        }
+        .auto-style6 {
+            background-color: #CCCCCC;
+            width: 18px;
+            height: 437px;
+        }
+        .auto-style7 {
+            background-color: #FFFFCC;
+            width: 18px;
+        }
+        .auto-style8 {
+            width: 377px;
+            height: 437px;
+        }
+        .auto-style9 {
+            background-color: #FFFFCC;
+            width: 377px;
+        }
+        .auto-style10 {
+            height: 77px;
+            background-color: #FFFFCC;
+        }
+        .auto-style11 {
+            width: 150px;
+            height: 113px;
+        }
+        .auto-style12 {
+            width: 615px;
+            height: 135px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style10" colspan="2" style="background-color: #FFFF8C">
+                    <img class="auto-style12" src="Imagens/banner2.png" /></td>
+                <td class="auto-style3" rowspan="2" style="background-color: #FFFF8C">
+                    <img class="auto-style11" src="Imagens/logo.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style4" colspan="2" style="background-color: #FFFF8C">
+                    <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <Items>
+                            <asp:MenuItem Text="Cadastro" Value="Cadastro">
+                                <asp:MenuItem NavigateUrl="~/Clientes.aspx" Text="Clientes" Value="Clientes"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Animais.aspx" Text="Animais" Value="Animais"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Tratamentos.aspx" Text="Tratamentos" Value="Tratamentos"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Cidades.aspx" Text="Cidades" Value="Cidades"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Cadastro.aspx" Text="Login" Value="Login"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Movimentação" Value="Movimentação">
+                                <asp:MenuItem NavigateUrl="~/Carrinho.aspx" Text="Carrinho" Value="Carrinho"></asp:MenuItem>
+                                <asp:MenuItem Text="Registros" Value="Registros" NavigateUrl="~/Registros.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6" style="background-color: #959595"></td>
+                <td class="auto-style8" style="background-color: #FFFFDF">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style5" style="background-color: #959595"></td>
+            </tr>
+            <tr>
+                <td class="auto-style7" style="background-color: #FFFF8C">
+                    <asp:Menu ID="Menu3" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td class="auto-style9" style="background-color: #FFFF8C">Programa Desenvolvido por:<br />
+                    -Addam Cauê Peres Rafacho<br />
+                    -Pedro Luiz Foganholi</td>
+                <td class="auto-style4" style="background-color: #FFFF8C">&nbsp;</td>
+            </tr>
+        </table>
+    <div>
+    </div>
+    </form>
+</body>
+</html>
