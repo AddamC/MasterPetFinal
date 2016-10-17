@@ -107,10 +107,10 @@
                     </asp:Menu>
                     <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
                 </td>
-                <td class="auto-style9" style="background-color: #FFFF8C">Programa Desenvolvido por:<br />
+                <td class="auto-style9" style="background-color: #FFFF8C">&nbsp;</td>
+                <td class="auto-style4" style="background-color: #FFFF8C">Programa Desenvolvido por:<br />
                     -Addam Cauê Peres Rafacho<br />
                     -Pedro Luiz Foganholi</td>
-                <td class="auto-style4" style="background-color: #FFFF8C">&nbsp;</td>
             </tr>
         </table>
     <div>
