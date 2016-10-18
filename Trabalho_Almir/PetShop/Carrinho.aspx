@@ -9,9 +9,16 @@
             width: 162px;
         }
     .auto-style15 {
+        margin-left: 150px;
         width: 380px;
         height: 116px;
     }
+        .auto-style16 {
+            position:center;
+            color: #FFFFFF;
+            font-size: large;
+            background-color: #5bc0de;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -86,7 +93,7 @@
 <br />
 <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:PETSHOPConnectionString %>" SelectCommand="SELECT [descricao], [preco] FROM [Tipo_Tratamentos]"></asp:SqlDataSource>
     <br />
-    <table border="1" class="auto-style13" style="background-color: #F2CD5E; font-family: Consolas; font-size: large; font-weight: normal;">
+    <table border="1" class="auto-style13" style="background-color: #F2CD5E; font-family: Consolas; font-size: large; font-weight: normal; position: center;">
         <tr>
             <td>
                 <asp:Label ID="Label1" runat="server" Text="Animal: "></asp:Label>
@@ -113,16 +120,13 @@
         </tr>
     </table>
     <br />
-    <asp:Label ID="Label4" runat="server" Text="Valor: "></asp:Label>
+    <asp:Label ID="Label4" CssClass="auto-style16" runat="server" Text="Valor: "></asp:Label>
 &nbsp;R$<asp:TextBox ID="txtPreco" runat="server"></asp:TextBox>
     <br />
 <asp:Label ID="lblErro" runat="server"></asp:Label>
 <br />
     <br />
-    <asp:Button ID="btnConfirmar" runat="server" OnClick="btnConfirmar_Click" Text="Confirmar" />
-    <br />
-    <br />
-    <br />
+    <asp:Button class="btn btn-success" ID="btnConfirmar" runat="server" OnClick="btnConfirmar_Click" Text="Confirmar" style="margin-left:350px"/>
     <br />
     <br />
 <br />

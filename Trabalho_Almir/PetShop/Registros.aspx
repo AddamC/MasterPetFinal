@@ -6,10 +6,18 @@
         width: 382px;
         height: 134px;
     }
-</style>
+        .auto-style14 {
+            width: 253px;
+            height: 104px;
+            margin-left: 10px;
+        }
+        .auto-style15 {
+            text-align: center;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <p>
-    <img class="auto-style13" src="Imagens/Registro_Banner.png" /></p>
+    <p class="auto-style15">
+    <img class="auto-style14" src="Imagens/Registro_Banner.png" /></p>
 </asp:Content>
 

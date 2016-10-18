@@ -2,15 +2,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
-    .auto-style13 {
-        width: 662px;
-        height: 261px;
-    }
-</style>
+        .auto-style14 {
+            width: 228px;
+            height: 138px;
+            margin-left: 10px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <br />
-<img class="auto-style13" src="Imagens/Dados_banner.png" /><br />
+<img class="auto-style14" src="Imagens/Dados_banner.png" /><br />
     <br />
 <br />
 <br />
@@ -19,7 +20,7 @@
             <asp:QueryStringParameter Name="id" QueryStringField="id" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView2" runat="server" AutoGenerateRows="False" CellPadding="3" DataSourceID="SqlDataSource4" Height="50px" Width="131px" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellSpacing="2">
+    <asp:DetailsView CssClass="table" ID="DetailsView2" runat="server" AutoGenerateRows="False" CellPadding="3" DataSourceID="SqlDataSource4" Height="50px" Width="131px" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellSpacing="2">
         <EditRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
         <Fields>
             <asp:BoundField DataField="nome" HeaderText="Nome:" SortExpression="nome" />
@@ -39,7 +40,7 @@
     </asp:SqlDataSource>
     <br />
     <br />
-    <asp:DetailsView ID="DetailsView3" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource5" Height="50px" Width="125px" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
+    <asp:DetailsView CssClass="table" ID="DetailsView3" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource5" Height="50px" Width="125px" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
         <EditRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
         <Fields>
             <asp:BoundField DataField="id" HeaderText="ID:" InsertVisible="False" ReadOnly="True" SortExpression="id" />
